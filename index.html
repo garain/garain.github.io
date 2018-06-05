@@ -2,7 +2,8 @@
 <html lang="en">
 
   <head>
-
+	  
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -22,7 +23,12 @@
     <link href="simple-line-icons.less" rel="stylesheet">	
     <!-- Custom styles for this template -->
     <link href="resume.min.css" rel="stylesheet">
-
+<style>
+	.pageclip-form__submit::after {
+  border-color: rgba(0, 255, 0, 0.8);
+  border-left-color: black;
+}
+	  </style>
    <style>
   div.a1 {
  font-size:25px;
@@ -181,6 +187,8 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
           </li>
+	   <li class="nav-item">
+		   <a class="nav-link js-scroll-trigger" href="#help">Require Help?</a></li>
         </ul>
       </div>
     </nav>
@@ -454,6 +462,21 @@
         </div>
       </section>
 
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="help">
+		<h2>Donate a nominal fee of 39 INR only on PayTM number 9647972747 and fill the form below for any help or any code required.</h2>
+		<h2>If you want to donate via other means write in the text area with the help required.And also provide your valuable feedback about my projects and website.</h2>
+		<img src="qr.jpg" align="right">Scan QR code to pay or pay to number 9647972747</img>
+		<form action="https://send.pageclip.co/XS4uAGzoK29Ls5Z85lTc7myY6NIaXPZU/Requirements" class="pageclip-form" method="post">
+		<input type="text" name="name" value="Anne Frank" />Name<br>
+  		<input type="email" name="email" value="gamingworld123@example.com" />E-mail ID<br>
+		<input type="tel" name="Ph.No." value="9765432567" max="9999999999" />Phone number<br> 
+		<textarea cols="100" rows="10" name="HelpRequired">Ask whatever help required.<br></textarea>
+		
+			<button type="submit" class="pageclip-form__submit">
+    <span>Send</span>
+  </button>
+		</form>
+		</section>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -465,7 +488,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 
 </html>
