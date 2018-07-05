@@ -3,31 +3,34 @@
 
   <head>
 	  
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/gif/png" href="img/wsicn.ico">
+    <link rel="icon" type="image/gif/png" href="wsicn.ico">
     <title>Avishek Garain</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="font-awesome.min.css" rel="stylesheet">
     <link href="devicons.min.css" rel="stylesheet">
-    <link href="garain git-hub/simple-line-icons.css" rel="stylesheet">
+    <link href="simple-line-icons.css" rel="stylesheet">
     <link href="simple-line-icons.less" rel="stylesheet">	
     <!-- Custom styles for this template -->
     <link href="resume.min.css" rel="stylesheet">
 <style>
-	.pageclip-form__submit::after {
-  border-color: rgba(0, 255, 0, 0.8);
-  border-left-color: black;
-}
+	.alert{
+	text-align: center;
+	padding:10px;
+	background:#79c879;
+	color:#fff;
+	margin-bottom:10px;
+	display:none;
+	}
 	  </style>
    <style>
   div.a1 {
@@ -155,7 +158,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">My Profile</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="profile.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -469,18 +472,19 @@
 		<h3>Donate a nominal fee of 39 INR only on PayTM number <b><u>9647972747</u></b> and fill the form below for any help or any code required.</h2>
 		<h3>If you want to donate via other means select Other means option and contact me.Also provide your valuable feedback about my projects and website.</h2>
 		<img src="qr.jpg" align="right" height="200" width="200">Scan QR code to pay or pay to number 9647972747</img>
-		<form action="https://send.pageclip.co/XS4uAGzoK29Ls5Z85lTc7myY6NIaXPZU/Requirements" class="pageclip-form" method="post">
-		Name<br><input type="text" name="name" required STYLE="color: rgb(66,244,244);font-size=30px; font-family: Courier New; font-weight: bold; background-color: rgba(249,60,17,0.25);" value="Anne Frank" /><br>
-  		E-mail ID<br><input type="email" name="email" required STYLE="color: rgb(0,127,255); background-color: rgba(234,62,249,0.25); font-size=30px; font-family: Courier New; font-weight: bold; " value="gamingworld123@example.com" /><br>
-		Phone number<br> <input type="tel" name="Ph.No." required value="9765432567" STYLE="color: rgb(255,0,93);font-size=30px;  background-color: rgba(62,71,249,0.25); font-family: Courier New; font-weight: bold;"  max="9999999999" /><br>
-		Institution<br><input type="text" name="Institution" required STYLE="color: rgb(252,248,10);font-size=30px; font-family: Courier New; font-weight: bold; background-color: rgba(99,0,19,0.25);" value="Jadavpur University" /><br>
+	<div class="alert">Your message has been sent.</div> 	
+	<form id="contactForm">
+		Name<br><input type="text" name="name" required STYLE="color: rgb(66,244,244);font-size=30px; font-family: Courier New; font-weight: bold; background-color: rgba(249,60,17,0.25);" value="Anne Frank" id="name"/><br>
+  		E-mail ID<br><input type="email" id="email" name="email" required STYLE="color: rgb(0,127,255); background-color: rgba(234,62,249,0.25); font-size=30px; font-family: Courier New; font-weight: bold; " value="gamingworld123@example.com" /><br>
+		Phone number<br> <input type="tel" id="phone_number" name="phone_number" required value="9765432567" STYLE="color: rgb(255,0,93);font-size=30px;  background-color: rgba(62,71,249,0.25); font-family: Courier New; font-weight: bold;"  max="9999999999" /><br>
+		Institution<br><input type="text" id="Institution" name="Institution" required STYLE="color: rgb(252,248,10);font-size=30px; font-family: Courier New; font-weight: bold; background-color: rgba(99,0,19,0.25);" value="Jadavpur University" /><br>
 		<br><br>
 	<div class="row">
       <div class="col-25">
         <label for="Payment">Mode of Payment</label>
       </div>
       <div class="col-75">
-        <select id="Payment" name="Payment_Mode" STYLE="color: rgb(0,127,255); background-color: rgba(234,62,249,0.25); font-size=30px; font-family: Courier New; font-weight: bold; ">
+        <select id="Payment" name="Payment" STYLE="color: rgb(0,127,255); background-color: rgba(234,62,249,0.25); font-size=30px; font-family: Courier New; font-weight: bold; ">
           <option value="PayTM">PayTM</option>
           <option value="Recharge">Recharge</option>
           <option value="Other means">Other means</option>
@@ -488,25 +492,25 @@
       </div>
     </div> <br>
 			<h4>Ask whatever help required here.</h4><br>
-		<textarea cols="100" rows="15" name="HelpRequired" wrap="soft" STYLE="color: rgb(139,49,186) ; background-color: rgba(255,255,255,0.25); font-size=30px; font-family: Courier New; font-weight: bold; "  max="9999999999"></textarea><br>
+		<textarea id="HelpRequired" cols="100" rows="15" name="HelpRequired" wrap="soft" STYLE="color: rgb(139,49,186) ; background-color: rgba(255,255,255,0.25); font-size=30px; font-family: Courier New; font-weight: bold; "  max="9999999999"></textarea><br>
 		
-			<button type="submit" class="pageclip-form__submit">
+			<button type="submit">
     <span>Send</span>
   </button>
 		</form>
 		</section>
     </div>
-
     <!-- Bootstrap core JavaScript -->
-    <script src="jquery/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="jquery-easing/jquery.easing.min.js"></script>
+    <script src="jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="resume.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script src="main.js"></script>
   </body>
 
 </html>
